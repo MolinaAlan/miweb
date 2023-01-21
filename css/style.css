@@ -1,0 +1,24 @@
+/** Index*/
+* {
+  box-sizing: border-box;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+body{
+  background-color: bisque;
+  
+}
+p{
+  color: blueviolet;
+}
+  #formacion_educativa{
+    font-family: 'Roboto', sans-serif;;
+    color: black;
+  } 
+  #experiencia_laboral{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+  }
+  #nombre{
+    font-family: 'Roboto', sans-serif;;
+    color: black;
+  }
