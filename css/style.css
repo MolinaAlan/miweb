@@ -24,14 +24,38 @@ p{
     color: black;
   }
   #Datos_personales{
+    display: inline-block;
+    display
     margin: auto;
     width: 30%;
-    
     background-color: aliceblue;
   }
   #Imagen_cv{
-    background-color: white;
+    z-index: 100;
+   left: 0;
+   top: 0;
+  }
+  #Pie_de_pagina{
+    margin: 0px;
+    border: 0px;
+    background-color: aliceblue;
+    text-align: center;
     padding: 0px;
-    border:0px;
-    margin-left: 10px;
+  }
+  #imagen_instagram{
+    
+    
+  }
+  #Caracteristicas{
+    display: inline-block;
+    display
+    margin: auto;
+    width: 30%;
+    background-color: aliceblue;
+  }
+  #contenedor{
+    background-color: aliceblue;
+    height: 800px;
+    width: 800px;
+    position: relative;
   }
