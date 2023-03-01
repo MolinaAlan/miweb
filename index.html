@@ -27,136 +27,145 @@
 </head>
 <body>
     <main>
-    <nav><!--Barra de navegacion-->
-     <head><!--Nombre del cv-->
-    <h1 id="nombre">Alan Molina</h1>
-     </head>
-     <!--fotos.html y material_visual.html-->
-    </nav>
-    <br>
-    <div id="contenedor" >
-    <img id="Imagen_cv" src="E:\Escritorio\Programacion\Front end Academy\alaan.png" alt="Actor" height="500px"width="420px">
-    <article id="Datos_personales"><!--Datos Personales-->
-    <ul>
-        <li>Fecha de nacimiento: 07/08/1999</li>
-        <li>Edad: 23 años</li>
-        <li>Nacionalidad: Argentina</li>
-        <li>Localidad: Berazategui</li>
-        <li>Correo electronico: HipHopMj@outlook.es</li>
-    </ul>
-    </article>
-    <br>
-    <article id="Caracteristicas" ><!--Caracteristicas fisicas-->
+     <header><!--Nombre del cv-->
+        <a href="#" class="logo">
+            <img src="mosca sin.png" alt="logo de la Compañia" id="logo-img">
+           <h2 id="logo-nombre"> Alan Molina</h2> 
+        </a> 
+     </header>
+    <div class="contenedor_img">
+    <img class="imagen"   src="E:\Escritorio\Programacion\Front end Academy\alaan.png" alt="Actor" >
+    <article class="datos"><!--Datos Personales-->
         <head>
-          <h2>Caracteristicas fisicas y talle/medidas:</h2>
+            <br>
+            <h1>Actor</h1>
+            <br>
         </head>
-    <p>Altura: 1.84</p>
-    <p>Peso: 78kg</p>
-    <p>Cabello: Castaño oscuro</p>
-    <p>Ojos: Verdes con amalirro</p>
-    <p>Talle camisa: XL/XXL</p>
-    <p>Talle pantalon: 44</p>
-    <p>Calzado: 41/42</p>
+    <ul>
+        <li>Fecha de nacimiento: 07/08/1999</li><br>
+        <li>Nacionalidad: Argentina</li><br>
+        <li>Localidad: Berazategui</li><br>
+        <li>Correo electronico: HipHopMj@outlook.es</li><br>
+    </ul>
+    
+    <!--Caracteristicas fisicas-->
+        <head>
+            <br>
+          <h2>Caracteristicas fisicas y talle/medidas:</h2>
+          <br>
+        </head>
+    <p>Altura: 1.84</p><br>
+    <p>Peso: 78kg</p><br>
+    <p>Cabello: Castaño oscuro</p><br>
+    <p>Ojos: Verdes con amalirro</p><br>
+    <p>Talle camisa: XL/XXL</p><br>
+    <p>Talle pantalon: 44</p><br>
+    <p>Calzado: 41/42</p><br>
     </article>
      </div>
-    <br>
-    <section><!--Formacion educativa-->
-        <head>
-          <h3 id="formacion_educativa">Formacion educativa</h3>
-        </head>
-    <p>[2022] - [en curso]<br>
-        [Museo Argentino Del Titere]<br>
-        [Taller de manejo y creacion de Titeres - PROFESOR, GUILLERMO FATISCO]</p>
-
-    <p>[2019] - [en curso]<br>
-        [Escuela municipal de bellas artes "Carlos Morel"]<br>
-        [Tecnicatura en actuacion Teatral]</p>
-
-    <p>[2022]<br>
-        [Escuela municipal de bellas artes "Carlos Morel"]<br>
-        [Entrenamiento Actoral - Metodo Tia, PROFESORA, DEBORA ASTROSKY]</p>
-
-    <p>[2019] <br>
-        [Escuela municipal de bellas artes "Carlos Morel"]<br>
-        [Taller de improvisacion - PROFESORA, CHECHI SEGOVIA]</p>
-
-    <p>[2014] - [2018]<br>
-        [E.E.S.T N°3 DE BERAZATEGUI]<br>
-        [Taller escolar de Actuacion - PROFESOR, JUAN MIÑO]</p>
-    </section>
-     <br>
-    <section><!--Experiencia laboral-->
-        <head>
-            <h3 id="experiencia_laboral">Experiencia laboral</h3>
-        </head>
-    <p>[2022] - [en curso]<br>
-        [Elenco estable del Museo Argentino Del Titere]</p>
-        
-    <p>[2022] - [en curso]<br>
-        [Obra Títeres  - "Franqui y Frankenstein"]<br>
-        [Museo Argentino del títere]</p>
-        
-    <p>[ 2022] -[en curso]<br>
-        [Obra Títeres (Infantil)  - "El lobo está?" ]<br>
-        [Escuelas]</p>
-
-    <p>[ 2022]  <br>
-        [Obra Teatral  - "El amor es el fin del mundo"]<br>
-        [Micro Teatro Quilmes]</p>
-
-    <p>[ 2020 ] <br>
-        [Obra Teatral  - "El amor es el fin del mundo"]<br>
-        [En Bellas Ates, Carlos Morel ]</p>
-
-    <p>[2020]<br>
-         [ Monologó Teatral/virtual - "Una ama como uno puede"]<br>
-         [ En Bellas Ates, Carlos Morel]</p>
+     <!-- <Experiencia educativa-->
+    <div id="contenedor_educativa">
+        <div class="content-collapse">
             
-    <p>[ 2019] <br>
-        [Obra de clown - "Búsqueda imaginaria"]<br>
-        [ En Bellas Ates, Carlos Morel]</p>
+            <section>
+                <button class="btn-expandir"><h3>Formacion Educativa</h3></button>
+                <p class="text-expandir"><br>
+                    [2022] - [en curso]<br>
+                    [Museo Argentino Del Titere]<br>
+                    [Taller de manejo y creacion de Titeres - PROFESOR, GUILLERMO FARISCO]<br>
+                    <br>
+                     [2019] - [en curso]<br>
+                    [Escuela municipal de bellas artes "Carlos Morel"]<br>
+                    [Tecnicatura en actuacion Teatral]<br>
+                    <br>           
+                    [2022]<br>
+                    [Escuela municipal de bellas artes "Carlos Morel"]<br>
+                    [Entrenamiento Actoral - Metodo Tia, PROFESORA, DEBORA ASTROSKY]<br>
+                    <br>           
+                    [2019] <br>
+                    [Escuela municipal de bellas artes "Carlos Morel"]<br>
+                    [Taller de improvisacion - PROFESORA, CHECHI SEGOVIA]<br>
+                    <br>
+                    [2014] - [2018]<br>
+                    [E.E.S.T N°3 DE BERAZATEGUI]<br>
+                    [Taller escolar de Actuacion - PROFESOR, JUAN MIÑO]
+                </p> 
+    
+            </section>
 
-    <p>[2018]<br>
-        [Obra teatral - "Antígona la coleccionadora de muertos"]<br>
-        [ En jóvenes y memoria]</p>
+        </div>
+    </div>
+   <!-- <section>Experiencia laboral-->
+     <div id="contenedor_laboral">
+        <div class="content-collapsee">
+            <section>
+                <button class="btn-expandir"><h3>Experiencia Laboral</h3></button>
+                <p class="text-expandir"><br>
+                    [2022] - [en curso]<br>
+                    [Elenco estable del Museo Argentino Del Titere]<br>
+                    <br>
+                    [2022] - [en curso]<br>
+                    [Obra Títeres  - "Franqui y Frankenstein"]<br>
+                    [Museo Argentino del títere]<br>
+                    <br>
+                    [2022] -[en curso]<br>
+                    [Obra Títeres (Infantil)  - "El lobo está?" ]<br>
+                    [Escuelas]<br>
+                    <br>
+                    [2022]  <br>
+                    [Obra Teatral  - "El amor es el fin del mundo"]<br>
+                    [Micro Teatro Quilmes]<br>
+                    <br>
+                    [2020]<br>
+                    [ Monologó Teatral/virtual - "Una ama como uno puede"]<br>
+                    [ En Bellas Ates, Carlos Morel]<br>
+                    <br>  
+                    [2019] <br>
+                    [Obra de clown - "Búsqueda imaginaria"]<br>
+                    [En Bellas Ates, Carlos Morel]<br>
+                    <br>
+                </p>
 
-    <p>[  2018 ] <br> 
-        [ Corto escolar - "El plan cóndor"]<br>
-        [Micro Teatro Quilmes]</p>
+            </section>
+        </div>
 
-    <p>[  2018 ] <br>
-        [Corto - "La vida de Jim Elliot" - (Jim Elliot)]<br>
-        [Iglesia Cristiana Evangélica Pueblo Nuevo]</p>
 
-    <p>[2017]<br>
-         [Obra Infantil- "El rey Ramsés"]<br>
-         [Iglesia Cristiana Evangélica Pueblo Nuevo ]</p>
-   
-    <p>[2017]<br>
-         [Corto infantil - "Guerreros Valientes"]<br>
-        [Iglesia Cristiana Evangélica Pueblo Nuevo]</p>
-
-    <p>[2017]<br>
-        [Obra Musical - "Libérame" (Jesus)]<br>
-        [Iglesia Cristiana Evangélica Pueblo Nuevo]</p>
-
-    <p>[ 2017 ]   <br>
-        [Obra teatral - "Problemas en el Olimpo" - (Zeus)]<br>
-        [De vicenzo de Berazategui (Día internacional del VIH)]</p>
-
-    <p>[ 2016 ] <br>
-        [Obra teatral - "El juicio Festivo"]<br>
-        [De vicenzo de Berazategui (Día internacional del VIH]</p>
-
-    <p>[ 2014]<br>
-        [Obra teatral - "El mosquito del sida"]<br>
-        [De vicenzo de Berazategui (Día internacional del VIH)]</p>
-    </section>
+     </div>
     <br>
-    <footer id="Pie_de_pagina"><!--Piede pagina-->
-    <a href="https://www.instagram.com/alanmolina997/" target="_blank"><img id="imagen_instagram"  src="E:\Escritorio\Programacion\Front end Academy\instagram.png" alt="instagram personal" height="80px"width="129px"></a>
-    <p>Derechos reservados por Plagartie Compañi</p>
-    </footer>
+
+    <!--Piede pagina-->
+    <footer class="Pie_de_pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="mosca sin.png" alt="logo de la Compañia" height="50px" >
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>UN POCO MAS SOBRE MI</h2>
+                <P> Ademas de ser actor, estudio la carrera de Ingenieria en Informatica, 
+                y manejo diversos programas con bastante facilidad Tanto de edicion como de organizacion.</P>
+                <p>Se rapear, andar en skate, tengo conocimientos sobre las artes marciales.</p>
+                <p>Ademas tengo mi propia compañia teatral, LLamada  "La Plagartie".</p>
+            </div>
+            <div class="box">
+                <h2>SEGUIME</h2>
+                <div class="red-social">
+                    <a href="https://www.instagram.com/alanmolina997/" target="_blank class="ig-personal"><img src="E:\Escritorio\Programacion\Front end Academy\instagram.png" alt="instagram personal" height="50px"width="80px"></a>
+                    <a href="https://twitter.com/Alan_Hiphop99" target="_blank class="tw-personal"><img src="E:\Escritorio\Programacion\Front end Academy\twitter.png" alt="twitter personal" height="40px"width="40px"></a>
+                    <a href="https://www.instagram.com/laplagartie/" target="_blank class="ig-compa"><img src="E:\Escritorio\Programacion\Front end Academy\instagram.png" alt="instagram empresa" height="50px"width="80px"></a>
+                    <a class="yt" href="https://www.youtube.com/channel/UCL007-aLww0BZSkf0ZvlHCQ" target="_blank class="ig-personal"><img src="E:\Escritorio\Programacion\Front end Academy\Youtube.png" alt="youtube personal" height="30px"width="50px"></a>
+                    <a class="tw" href="https://www.twitch.tv/awmgamess" target="_blank class="ig-personal"><img src="E:\Escritorio\Programacion\Front end Academy\twitch.png" alt="Twitch personal" height="30px"width="50px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>© 2023 La Plagartie - Todo los Derechos Reservados </small>
+        </div>
+        </footer>
     </main>
+    <script type="text/javascript" src="js\app.js"></script>
 </body>
 </html>

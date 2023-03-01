@@ -1,61 +1,243 @@
 /** Index*/
+
+
 * {
   box-sizing: border-box;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 body{
   background-color: bisque;
   
 }
 p{
-  color: blueviolet;
+  color: black;
 }
-  #formacion_educativa{
-    font-family: 'Roboto', sans-serif;;
-    color: black;
-  } 
-  #experiencia_laboral{
-    font-family: 'Roboto', sans-serif;
-    color: black;
+
+
+/** Menu*/
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+nav a{
+ font-weight: 600;
+ padding-right: 20px;
+}
+
+header{
+  display: flex;
+  min-height: 70px;
+  background-color: coral;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  height: 50px;
+  margin-right: 10px;
+}
+
+
+/** Menu celular*/
+
+
+@media (max-width:700px){
+  header, {
+    flex-direction: column;
   }
-  #nombre{
-    background-color: white;
-    font-family: 'Roboto', sans-serif;;
-    color: black;
+  nav{
+    padding: 10px 0px;
   }
-  #Datos_personales{
-    display: inline-block;
-    display
-    margin: auto;
-    width: 30%;
-    background-color: aliceblue;
-  }
-  #Imagen_cv{
-    z-index: 100;
-   left: 0;
-   top: 0;
-  }
-  #Pie_de_pagina{
-    margin: 0px;
-    border: 0px;
-    background-color: aliceblue;
-    text-align: center;
-    padding: 0px;
-  }
-  #imagen_instagram{
-    
-    
-  }
-  #Caracteristicas{
-    display: inline-block;
-    display
-    margin: auto;
-    width: 30%;
-    background-color: aliceblue;
-  }
-  #contenedor{
-    background-color: aliceblue;
-    height: 800px;
-    width: 800px;
-    position: relative;
-  }
+
+}
+
+
+/** foto y datos */
+
+
+.datos{
+  margin-top: 50px;
+  font-size: larger;
+}
+
+.contenedor_img {
+display: flex;
+
+}
+
+.imagen{
+
+  height: 700px;
+  margin-left:200px; 
+  margin-right: 120px;
+  display: flex;
+}
+
+
+/** Formacion educativa **/
+
+
+.contenedor_educativa{
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.content-collapse{
+  margin:30px;
+  padding: 30px;
+  width: 400px;
+  height: auto;
+  display: flex;
+  background-color: black
+  
+  
+}
+
+.edu-img{
+  height: 40px;
+}
+.btn-expandir{
+  background-color: bisque;
+  cursor: pointer;
+  margin: 5px 0 5px 0;
+  padding: 2.5px 5px 2.5px 5px;
+  
+}
+
+.content-collapse section:nth-child(n){
+  text-align: justify;
+  position: relative;
+  border-style: none;
+}
+
+.text-expandir{
+  position: relative;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+}
+
+.abrir_cerrar{
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
+}
+
+
+/*Experiencia laboral*/
+
+
+.text-labo{
+  position: relative;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+}
+.contenedor_laboral{
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content-collapsee{
+  margin:30px;
+  padding: 30px;
+  width: 400px;
+  height: auto;
+  display: flex;
+  margin-left: 700px;
+  background-color: black;
+  
+}
+
+
+/*Pie de pagina*/
+
+
+.Pie_de_pagina {
+  width: 100%;
+  background-color: coral;
+}
+
+.Pie_de_pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.Pie_de_pagina .grupo-1 .box figure{
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pie_de_pagina .grupo-1 .box figure img {
+ width: 50px;
+
+}
+
+.Pie_de_pagina .grupo-1 .box h2{
+  color: white;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.Pie_de_pagina .grupo-1 .box p{
+ color: black;
+ margin-bottom: 10px;
+
+}
+.Pie_de_pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 90px;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 10px;
+ text-align: center;
+ 
+}
+
+.Pie_de_pagina .grupo-2{
+  background-color: chocolate;
+  padding: 15px 10px;
+  text-align: center;
+  color:black;
+
+}
+.yt{
+  margin-left:40px ;
+  margin-top: 40px;
+}
+
+.tw{
+  margin-left: 10px;
+}
+
+
+
+  
+  
